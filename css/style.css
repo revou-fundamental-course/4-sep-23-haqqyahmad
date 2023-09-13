@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 12px 20px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+main {
+  padding: 20px 20px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  transition: 0.5s;
+}
+
+main > div > div {
+  width: 48%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.font-robot {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.font-red {
+  color: #cc2727;
+}
+
+.font-blue {
+  color: #4f6ede;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.margin-top-18 {
+  margin-top: 18px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-blue {
+  background-color: #4f6ede;
+}
+
+.bg-blue-dark {
+  background-color: #1139c8;
+}
+
+.bg-green {
+  background-color: #27cc2f;
+}
+
+.bg-red {
+  background-color: #cc2727;
+}
+
+.box-shadow-primary {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.box-shadow-secondary {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.border-blue {
+  border: 1px solid #4f6ede;
+}
+
+.no-border {
+  border: none;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+.rounded-50 {
+  border-radius: 50px;
+}
+
+.rounded-t-lg {
+  border-radius: 4px 4px 0px 0px;
+}
+
+#header-logo {
+  background-image: url("../img/revo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+#header-logo:hover {
+  opacity: 0.9;
+}
+
+.buttonTypeContainer {
+  margin-bottom: 16px;
+}
+
+.buttonTypeContainer > button {
+  cursor: pointer;
+}
+
+.buttonTypeContainer > button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btnType {
+  padding: 8px 28px;
+  width: fit-content;
+  margin-right: 18px;
+  transition: 0.5s;
+}
+
+.btntype:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.title {
+  padding: 12px 4px;
+}
+
+.imgContainer {
+  background-image: url("../img/persegi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140px;
+  width: 140px;
+  margin-top: 10px;
+}
+
+.content {
+  padding: 12px 18px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.rumus {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.hitung {
+  padding: 12px 18px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.hitung > input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  border: 3px solid rgb(209, 207, 207);
+}
+
+.hitung > input:focus {
+  border: 3px solid #000;
+}
+
+.hasil {
+  padding: 12px 18px;
+}
+
+.buttonContainer {
+  padding: 12px 18px;
+  bottom: 0;
+}
+
+.buttonContainer > button {
+  width: 49%;
+  padding: 12px 8px;
+  transition: 0.5s;
+  margin-bottom: 8px;
+}
+
+.buttonContainer > button:hover {
+  cursor: pointer;
+}
+
+.btnHitung {
+  background-color: #4f6ede;
+}
+
+.btnHitung:hover {
+  background-color: #627dde;
+}
+
+.btnHitung:active {
+  background-color: #1139c8;
+}
+
+.btnReset:hover {
+  background-color: #dd4242;
+}
+
+.btnReset:active {
+  background-color: #ae1616;
+}
+
+footer {
+  padding: 14px 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  #header-logo {
+    width: 105px;
+    height: 25px;
+  }
+
+  #mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+  main > div {
+    width: 100%;
+  }
+
+  main > div > div {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.5s;
+  }
+
+  #footerContainer {
+    font-size: 12px;
+  }
+
+  .typeContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonTypeContainer {
+    flex-wrap: wrap;
+    row-gap: 14px;
+  }
+
+  .btnType {
+    padding: 8px 28px;
+    width: fit-content;
+    margin-right: 18px;
+    transition: 0.5s;
+    font-size: 13px;
+  }
+}

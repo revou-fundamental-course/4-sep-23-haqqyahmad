@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KATIK | Kalkulator Matematika</title>
+    <link rel="icon" type="image/x-icon" href="img/revo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="flex flex-row bg-white box-shadow-primary">
+      <a href="#">
+        <div id="header-logo"></div>
+      </a>
+    </header>
+
+    <main id="mainContainer" class="flex flex-column">
+      <div class="buttonTypeContainer flex flex-row">        
+        <div class="title bg-blue">
+          <h2
+            class="font-robot font-white font-bold uppercase align-center font-size-20"
+          >
+            KATIK | Kalkulator Matematika
+          </h2>
+        </div>
+      </div>
+
+      <!-- Persegi -->
+      <div class="persegiContainer typeContainer flex flex-row justify-between">
+        <div class="flex flex-column bg-white box-shadow-secondary rounded">
+          <div class="title bg-blue rounded-t-lg">
+            <h2
+              class="font-robot font-white font-bold uppercase align-center font-size-20"
+            >
+              Luas Persegi
+            </h2>
+          </div>
+
+          <div class="imgContainer align-self-center"></div>
+
+          <div class="content">
+            <p class="font-robot">Rumus Luas Persegi yaitu:</p>
+            <div class="rumus">
+              <p class="font-robot font-bold align-center">L = S x S</p>
+            </div>
+            <p class="font-robot line-height-24">Dimana:</p>
+            <p class="font-robot line-height-24">L = Luas</p>
+            <p class="font-robot line-height-24">S = Sisi</p>
+          </div>
+
+          <div class="hitung">
+            <h3 class="font-robot font-bold">Hitung Luas Persegi</h3>
+            <p class="font-robot font-bold margin-top-18">Sisi:</p>
+            <input
+              type="number"
+              id="hitungPersegiLuas"
+              name="hitungPersegiLuas"
+              class="font-roboto"
+              placeholder="Nilai Sisi"
+            />
+          </div>
+
+          <div id="hasilPersegiLuas" class="hasil"></div>
+
+          <div class="buttonContainer">
+            <button
+              class="btnHitung font-roboto font-white font-bold font-size-14 uppercase rounded no-border"
+              onclick="getHitung('persegiLuas')"
+            >
+              Hitung
+            </button>
+
+            <button
+              class="btnReset font-roboto font-white font-bold font-size-14 uppercase bg-red rounded no-border"
+              style="float: right;" onclick="resetHasil('persegiLuas')"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-column bg-white box-shadow-secondary rounded">
+          <div class="title bg-blue rounded-t-lg">
+            <h2
+              class="font-robot font-white font-bold uppercase align-center font-size-20"
+            >
+              Keliling Persegi
+            </h2>
+          </div>
+
+          <div class="imgContainer align-self-center"></div>
+
+          <div class="content">
+            <p class="font-roboto">Rumus Keliling Persegi yaitu:</p>
+            <div class="rumus">
+              <p class="font-roboto font-bold align-center">K = 4 x S</p>
+            </div>
+            <p class="font-robot line-height-24">Dimana:</p>
+            <p class="font-robot line-height-24">K = Keliling</p>
+            <p class="font-robot line-height-24">S = Sisi</p>
+          </div>
+
+          <div class="hitung">
+            <h3 class="font-robot font-bold">Hitung Keliling Persegi</h3>
+            <p class="font-robot font-bold margin-top-18">Sisi:</p>
+            <input
+              type="number"
+              id="hitungPersegiKeliling"
+              name="hitungPersegiKeliling"
+              class="font-robot"
+              placeholder="Nilai Sisi"
+            />
+          </div>
+
+          <div id="hasilPersegiKeliling" class="hasil"></div>
+
+          <div class="buttonContainer">
+            <button
+              class="btnHitung font-robot font-white font-bold font-size-14 uppercase bg-green rounded no-border"
+              onclick="getHitung('persegiKeliling')"
+            >
+              Hitung
+            </button>
+
+            <button
+              class="btnReset font-robot font-white font-bold font-size-14 uppercase bg-red rounded no-border"
+              style="float: right;" onclick="resetHasil('persegiKeliling')"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer
+      id="footerContainer"
+      class="flex flex-row justify-center box-shadow-secondary bg-white"
+    >
+      <p class="font-robot font-bold align-center">
+        Created By Haqqy Ahmad Albantany | RevoU - Mini Project Website
+        Kalkulator Matematik
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
